@@ -1,0 +1,63 @@
+//
+// Footer
+// --------------------------------------------------
+
+.site-footer {
+	background-color: $black;
+	padding: 115px 0;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	&__link {
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 16px;
+		line-height: 18px;
+		font-weight: bold;
+		letter-spacing: 0.05em;
+		margin-bottom: 20px;
+		display: block;
+		transition: color .25s;
+		&:hover {
+			color: $green-accent;
+		}
+	}
+	&__nav {
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+	}
+	&__actions {
+		a {
+			display: inline-flex;
+			justify-content: flex-start;
+			align-items: center;
+			max-width: 210px;
+			width: 100%;
+			margin-bottom: 20px;
+			padding-left: 15px;
+			padding-right: 15px;
+			span {
+				color: $black;
+				transition: color .25s;
+				margin-left: 15px;
+			}
+			i {
+				font-size: 18px;
+				transition: color .25s;
+			}
+			&:hover {
+				span {
+					color: $green-accent;
+				}
+				i {
+					color: $green-accent;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

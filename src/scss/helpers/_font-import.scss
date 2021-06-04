@@ -1,0 +1,20 @@
+// Font Import
+// --------------------------------------------------
+
+@font-face {
+  font-family: 'Geometria Bold';
+  src:
+      url('../fonts/geometria/Geometria-Bold.woff') format('woff'),
+      url('../fonts/geometria/Geometria-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geometria Regular';
+  src:
+      url('../fonts/geometria/Geometria.woff') format('woff'),
+      url('../fonts/geometria/Geometria.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }

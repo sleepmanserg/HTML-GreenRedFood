@@ -1,0 +1,69 @@
+extends partials/layout
+
+//- Override default config variables
+append config
+
+  //- ********** Settings **********
+  //- ==============================
+  -var pageTitle = 'Home'
+  -var whatPage = 'Home'
+  //- ==============================
+  //- ********* Settings END *******
+
+//- Page Content
+block content
+  // - Hero banner section
+  section.hero-banner
+    img(src="./img/hero-banner.jpg", alt="")
+  //- Advantages info section
+  section.info-section.info
+    ul.info-list.d-flex
+      li.info-list__item
+        strong.text-green.text-big.text-strong
+          | 24
+          span /7
+        p.info-list__subtitle.text-sm Звоните
+        ul.info-list__phones
+          li
+            a(href="#").text-xs.text-black
+              span.text-strong (048)
+              |  888-88-88
+          li
+            a(href="#").text-xs.text-black
+              span.text-strong (050)
+              |  888-88-88
+          li
+            a(href="#").text-xs.text-black
+              span.text-strong (067)
+              |  888-88-88
+          li
+            a(href="#").text-xs.text-black
+              span.text-strong (063)
+              |  888-88-88
+      li.info-list__item
+        strong.text-black.text-big.text-strong
+          | 10
+          span %
+        p.info-list__subtitle.text-sm Скидка
+        p.text-xs При самовывозе и при
+          br
+          | заказе
+          b.text-strong  с 00:00 до 07:00
+      li.info-list__item
+        strong.text-black.text-big.text-strong
+          | 888
+          span грн.
+        p.info-list__subtitle.text-sm Минимальный заказ
+        p.text-xs.m-0 По кухне — 888 грн.
+        p.text-xs.m-0 По бару — 888 грн.
+      li.info-list__item
+        strong.text-black.text-big.text-strong
+          span От
+          | 888
+          span грн.
+        p.info-list__subtitle.text-sm Бесплатная доставка
+        p.text-xs.m-0 от 888 грн. и 888 грн.
+        p.text-xs.m-0 по какому-нибудь району
+  //- Stocks slider section
+  include ./partials/stocks
+

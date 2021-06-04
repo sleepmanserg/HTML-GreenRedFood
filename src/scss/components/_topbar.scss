@@ -1,0 +1,32 @@
+.topbar {
+	padding: 10px 75px;
+	background-color: $turquoise;
+	&-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&-left,
+	&-right {
+		display: flex;
+		align-items: center;
+		flex: 0 0 auto;
+		.btn {
+			margin: 0 15px;
+		}
+	}
+	&-left {
+		margin-left: -15px;
+	}
+	&-right {
+		margin-right: -15px;
+	}
+	&-logo {
+		padding: 0 15px;
+		flex: 0 0 152px;
+		max-width: 152px;
+	}
+	@media (max-width: 1439.98px) {
+		padding: 10px 0;
+	}
+}

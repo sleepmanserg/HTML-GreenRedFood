@@ -1,0 +1,28 @@
+.text-green {
+	color: $green-accent;
+}
+
+.text-black {
+	color: $black;
+}
+
+.text-strong {
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	font-family: 'Geometria Bold', sans-serif;
+}
+
+.text-big {
+	font-size: 48px;
+	line-height: 60px;
+}
+
+.text-xs {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.text-sm {
+	font-size: 14px;
+	line-height: 18px;
+}
