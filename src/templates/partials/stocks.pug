@@ -1,34 +1,32 @@
 section.stocks-section
-		.slick-container
+	.slick-container.slider
 
-			.slick-container__header.d-flex.justify-content-center
-				button.pp Prevs
-				h2 Акции
-				button.nn Next
+		.slider__header.d-flex.justify-content-center.align-items-center
+			button.slider__btn.prev-arrow
+				i.grf-arrow-l
+			h2.slider__title Акции
+			button.slider__btn.next-arrow
+				i.grf-arrow-r
 
-			.slick-carousel(data-slick='{\
-				"dots": false, \
-				"slidesToShow": 6, \
-				"slidesToScroll": 3, \
-				"prevArrow": ".pp", \
-				"nextArrow": ".nn" \
-			}')
-				.slide
-					.card Товар 1
-				.slide
-					.card Товар 2
-				.slide
-					.card Товар 3
-				.slide
-					.card Товар 4
-				.slide
-					.card Товар 5
-				.slide
-					.card Товар 6
-				.slide
-					.card Товар 7
-				.slide
-					.card Товар 8
-				.slide
-					.card Товар 9
-
+		.slick-carousel(data-slick='{\
+			"dots": false, \
+			"slidesToShow": 6, \
+			"slidesToScroll": 2, \
+			"prevArrow": ".prev-arrow", \
+			"nextArrow": ".next-arrow", \
+			"infinite": true \
+		}')
+			.slide
+				include ./product-card
+			.slide
+				include ./product-card
+			.slide
+				include ./product-card
+			.slide
+				include ./product-card
+			.slide
+				include ./product-card
+			.slide
+				include ./product-card
+			.slide
+				include ./product-card

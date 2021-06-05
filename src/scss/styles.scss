@@ -7,6 +7,7 @@
 @import 'helpers/utilities';
 @import 'helpers/scaffolding';
 @import 'helpers/icon-font';
+@import 'helpers/font-import';
 
 // Components
 @import 'components/typography';
@@ -15,6 +16,10 @@
 @import 'components/topbar';
 @import 'components/navigation';
 @import 'components/infoList';
+@import 'components/slider';
+@import 'components/product-card';
+@import 'components/subscribe';
+@import 'components/promo';
 @import 'components/mobileToggle';
 
 // Layout

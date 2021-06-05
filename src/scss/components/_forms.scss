@@ -1,0 +1,41 @@
+.subscribe-form {
+	input {
+		border-radius: 50px;
+		border: 1px solid transparent;
+		flex-grow: 2;
+		padding-left: 25px;
+		&::placeholder {
+			color: $black;
+			font-size: 16px;
+			opacity: 0.5;
+		}
+		&:focus {
+			outline: none;
+			box-shadow: none;
+			border-color: transparent;
+		}
+	}
+	label {
+		color: $black;
+		opacity: 0.5;
+		font-size: 16px;
+		line-height: 18px;
+		max-width: 135px;
+		letter-spacing: normal;
+		margin-bottom: 0;
+		margin-right: 40px;
+	}
+	.btn {
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 18px;
+		color: $black;
+		letter-spacing: normal;
+		margin-left: 10px;
+	}
+	&__input {
+		background-color: #fff;
+		border-radius: 50px;
+		padding: 3px 3px 3px 0;
+	}
+}

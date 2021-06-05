@@ -1,0 +1,23 @@
+.promo {
+	background-color: $black;
+	padding: 50px 0;
+	[class^="col-"], [class*=" col-"] {
+		padding: 0 10px;
+	}
+	.promo-banner {
+		&__header {
+			background-color: $green-accent;
+			padding: 16px 0;
+			text-align: center;
+		}
+		&__title {
+			color: $white;
+			margin-bottom: 0;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			font-size: 16px;
+			line-height: 18px;
+		}
+	}
+}

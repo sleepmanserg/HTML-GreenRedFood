@@ -17,9 +17,8 @@ $gray-darker: #C4C4C4;
 //== Font Family
 // --------------------------------------------------
 
-$font-family-serif:          'Geometria Regular', sans-serif;
-$font-family-body:           'Geometria Regular', sans-serif;
-
+// $font-family-serif:          'Geometria Regular', sans-serif;
+$font-family-body:           'Geometria', sans-serif;
 //== Media queries (responsive breakpoints)
 // -------------------------------------------------------
 
@@ -29,3 +28,5 @@ $tablet-port:    	 '768px';
 $mobile-land:		 	 '480px';
 $mobile-port:		 	 '360px';
 $menu-collapse: 	 $tablet-land;
+
+$transition: .3s;

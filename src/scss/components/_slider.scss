@@ -1,0 +1,30 @@
+.slider {
+	&__header {
+		background-color: $black;
+		color: $white;
+		padding: 42px 0;
+	}
+	&__title {
+		text-transform: uppercase;
+		font-size: 32px;
+		line-height: 36px;
+		font-weight: bold;
+		letter-spacing: 0.05em;
+		margin-bottom: 0;
+		padding: 0 100px;
+	}
+	&__btn {
+		background: none;
+		border: 2px solid $white;
+		border-radius: 50%;
+		width: 50px;
+		height: 50px;
+		color: $white;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		i {
+			font-size: 20px;
+		}
+	}
+}

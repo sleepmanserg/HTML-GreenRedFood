@@ -1,0 +1,9 @@
+.subscribe {
+	background-color: $turquoise;
+	padding: 35px 0;
+	&-inner {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}

@@ -5,6 +5,7 @@
 	font-size: 16px;
 	line-height: 18px;
 	position: relative;
+	transition: all $transition;
 	&:focus {
 		box-shadow: 0 0 0 .25rem rgba(0, 0, 0, 0);
 	}
@@ -19,7 +20,7 @@
 		justify-content: center;
 		i {
 			font-size: 22px;
-			transition: opacity .25s;
+			transition: opacity $transition;
 		}
 		&:hover {
 			i {
@@ -29,7 +30,7 @@
 	}
 	&-has-dropdown {
 		box-shadow: 0px 30px 60px rgba(0, 0, 0, 0);
-		transition: box-shadow .25s, border-radius .25s;
+		transition: box-shadow $transition, border-radius $transition;
 		.btn-dropdown {
 			position: absolute;
 			background-color: #fff;
@@ -43,7 +44,7 @@
 			transform: translateY(-20px);
 			opacity: 0;
 			visibility: hidden;
-			transition: opacity .25s, transform .25s;
+			transition: all $transition, opacity .15s;
 			border: 1px solid transparent;
 			z-index: 1;
 		}
@@ -65,7 +66,7 @@
 			text-align: left;
 			color: $black;
 			text-decoration: none;
-			transition: color .25s;
+			transition: color $transition;
 		}
 		.topbar__phone-dropdown {
 			a {
@@ -76,7 +77,7 @@
 			position: absolute;
 			right: 20px;
 			transform: rotate(180deg);
-			transition: transform .25s;
+			transition: transform $transition;
 		}
 		&:hover {
 			border-bottom-right-radius: 0;
@@ -99,7 +100,7 @@
 			margin-bottom: 20px;
 			text-decoration: none;
 			color: $black;
-			transition: color .25s;
+			transition: color $transition;
 			&:hover {
 				color: $green-accent;
 			}
@@ -121,7 +122,7 @@
 		letter-spacing: 0.05em;
 		border: none;
 		span {
-			transition: opacity .25s;
+			transition: opacity $transition;
 			&:first-of-type {
 				display: inline-flex;
 				align-items: center;
@@ -142,6 +143,19 @@
 					opacity: .5;
 				}
 			}
+		}
+	}
+	&-border {
+		border: 2px solid transparent;
+		border-radius: 50px;
+	}
+	&-green {
+		border-color: $green-accent;
+	}
+	&-turq {
+		background-color: $turquoise;
+		&:hover {
+			background-color: darken($turquoise, 5%);
 		}
 	}
 }
