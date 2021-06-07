@@ -1,26 +1,43 @@
 .product__card
-	.product__card-thumb
+	// Product card image
+	a.product__card-thumb(data-bs-toggle="modal" data-bs-target="#productModal")
 		img(src="./img/slider/01.png", alt="")
+	// Product card image end
 	.product__card-body
-		.product__card-title
-			a(href="#").text-strong Калифорния в тобике Калифорния в тобикевлпоавлп
+		// Product card name
+		a.text-strong.product__card-title(data-bs-toggle="modal" data-bs-target="#productModal") Калифорния в тобике
+		// Product card name end
+		// Product card hidden content with full description
+		.product__card-holder
+			.product__card-hidden
+				// Product card full description
+				.product__card-hidden-descr.text-sm Тёплый ролл, обжаренный в темпурном кляре, со снежным крабом, свежим огурцом, икрой Масаго, сыром Филадельфия и твёрдым сыром
+				// Product card full description end
+				.product__card-hidden-info.d-flex.justify-content-between.align-items-end
+					// Product card price
+					.product__card-hidden-price
+						| 180
+						span грн.
+					// Product card price end
+					// Product card weight
+					.product__card-hidden-weight
+						| 220
+						span г
+					// Product card weight end
+				.product__card-order__btn
+					button.btn-border.btn-green.btn.d-block.w-100 Заказать
+		// Product card hidden content with full description end
+		// Product card short desctiption
 		.product__card-descr.text-sm Тёплый ролл, обжаренный в темпурном кляре, со снежным крабом, свежим огурцом, икрой Масаго, сыром Филадельфия и твёрдым сыром
+		// Product card short desctiption end
 	.product__card-footer.d-flex.justify-content-between
+		// Product card price
 		.product__card-price.text-strong
 			| 122
 			span грн.
+		// Product card price end
+		// Product card weight
 		.product__card-weight.text-strong
 			| 210
 			span г.
-
-	.product__card-full
-		.product__card-full-descr.text-sm Тёплый ролл, обжаренный в темпурном кляре, со снежным крабом, свежим огурцом, икрой Масаго, сыром Филадельфия и твёрдым сыром
-		.product__card-full-info.d-flex.justify-content-between
-			.product__card-full-price
-				| 180
-				span грн.
-			.product__card-full-weight
-				| 220
-				span г
-		.product__card-order__btn
-			button.btn-border.btn-green.btn.d-block.w-100 Заказать
+		// Product card weight end

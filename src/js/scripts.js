@@ -9,13 +9,62 @@
     init: () => {
       // theme.toggler();
       $('.slick-carousel').slick();
-			// $('.carousel-prev').click(function(){
-			// 	$(this)('.slick-carousel').slick('slickPrev');
-			// });
-			// $('.carousel-next').click(function(e){
-			// 	e.preventDefault();
-			// 	$(this)('.slick-slider').slick('slickNext');
-			// });
+      theme.scrollToTab();
+      theme.productActive();
+      theme.inputPlusMinus();
+      // theme.stickyCategoryHeader();
+
+    },
+
+    // stickyCategoryHeader: () => {
+    //   let categoryHeader = $('.category-header');
+    //   if (categoryHeader.length) {
+    //     $(window).on('scroll', function() {
+    //       if($(this).scrollTop() > 300) {
+    //         categoryHeader.addClass('header-stuck');
+    //         $('body').addClass('header-stucked');
+    //       } else {
+    //         categoryHeader.removeClass('header-stuck');
+    //         $('body').removeClass('header-stucked');
+    //       }
+    //     });
+    //   }
+    // },
+
+    /** Scroll to active tab */
+    scrollToTab: () => {
+      $('.category-btn__wrapper').on('shown.bs.tab', function(e) {
+        let dataTab = $(this).data('bs-target');
+        $('html, body').animate({
+          scrollTop: $(dataTab).offset().top
+        }, '150');
+      });
+    },
+    /** Add class for product card */
+    productActive: () => {
+      let categoryProductCard = $('.product__card');
+      categoryProductCard.hover(function() {
+        $(this).toggleClass('active');
+      });
+    },
+
+    /** Input +/- increment */
+    inputPlusMinus: () => {
+      $('.minus').on('click', function () {
+        let $input = $(this).parent().find('input');
+        let count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+      });
+
+      $('.plus').on('click', function () {
+        let $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+      });
     },
 
     // toggler: () => {
@@ -50,22 +99,5 @@
   }
 
   theme.init();
-
-  // // Input +/- increment
-  // $('.minus').on('click', function () {
-  //   let $input = $(this).parent().find('input');
-  //   let count = parseInt($input.val()) - 1;
-  //   count = count < 1 ? 1 : count;
-  //   $input.val(count);
-  //   $input.change();
-  //   return false;
-  // });
-
-  // $('.plus').on('click', function () {
-  //   let $input = $(this).parent().find('input');
-  //   $input.val(parseInt($input.val()) + 1);
-  //   $input.change();
-  //   return false;
-  // });
 
 })(jQuery);

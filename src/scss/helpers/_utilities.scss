@@ -2,30 +2,10 @@
 // Utilities
 // --------------------------------------------------
 
-// .body-family { font-family: $font-family-body;}
-
-.text-thin { font-weight: 300;}
-.text-normal { font-weight: 500;}
-.text-semi-bold { font-weight: 600;}
-.text-bold { font-weight: bold;}
-
-.text-gray { color: $gray-light;}
-.text-dark { color: #0c0807;}
-
-.text-sm {
-  font-weight: 300;
-  font-size: 21px;
-  line-height: 1.43;
-  letter-spacing: -0.4px;
-}
-
-.text-lead {
-  font-size: 53px;
-  font-weight: 500;
-  line-height: 1.1;
-}
-.text-lg { font-size: 24px;}
-
 @media (max-width: $tablet-port) {
   .mobile-mt-0 { margin-top: 0 !important;}
+}
+
+.bg-black {
+  background-color: $black;
 }

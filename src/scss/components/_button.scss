@@ -151,11 +151,49 @@
 	}
 	&-green {
 		border-color: $green-accent;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: 0.05em;
+		&:hover,
+		&.active {
+			background-color: $green-accent;
+			color: $white;
+		}
 	}
 	&-turq {
 		background-color: $turquoise;
 		&:hover {
 			background-color: darken($turquoise, 5%);
 		}
+	}
+}
+
+/** Category nav tabs button **/
+
+.category-btn {
+	color: $white;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: 0.05em;
+	border: 2px solid $white;
+	border-radius: 50%;
+	width: 140px;
+	height: 140px;
+	text-align: center;
+	background-color: $black;
+	transition: color $transition;
+	padding: 10px;
+	word-wrap: break-word;
+	&:hover,
+	&:focus {
+		color: $green-accent;
+	}
+	@media (max-width: 1100px) {
+		width: 100px;
+		height: 100px;
+		font-size: 14px;
+		line-height: 1;
 	}
 }

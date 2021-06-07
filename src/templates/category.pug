@@ -1,0 +1,590 @@
+extends partials/layout
+
+//- Override default config variables
+append config
+
+	//- ********** Settings **********
+	//- ==============================
+	-var pageTitle = 'Category'
+	-var whatPage = 'Category'
+	//- ==============================
+	//- ********* Settings END *******
+
+//- Page Content
+block content
+
+	section.category
+		header.category-header.bg-black
+			nav.category-nav
+				#sushiTab.nav.category-tab__nav(role='tablist')
+					.category-btn__wrapper.active(style="background-image: url('./img/tabs/01.png')" data-bs-toggle='tab' data-bs-target='#sushi-sets-nav' role='tab' aria-controls='nav-sushi-sets' aria-selected='true')
+						button#sushiSets.nav-link.btn.category-btn Сеты
+					.category-btn__wrapper(style="background-image: url('./img/tabs/02.png')" data-bs-toggle='tab' data-bs-target='#sushi-hot-nav' role='tab' aria-controls='nav-sushi-hot' aria-selected='false')
+						button#sushiHot.nav-link.btn.category-btn Горячие
+					.category-btn__wrapper(style="background-image: url('./img/tabs/03.png')" data-bs-toggle='tab' data-bs-target='#sushi-maki-nav' role='tab' aria-controls='nav-sushi-maki' aria-selected='false')
+						button#sushiMaki.nav-link.btn.category-btn Маки
+					.category-btn__wrapper(style="background-image: url('./img/tabs/04.png')" data-bs-toggle='tab' data-bs-target='#sushi-gukan-nav' role='tab' aria-controls='nav-sushi-gukan' aria-selected='false')
+						button#sushiGukan.nav-link.btn.category-btn Гуканы
+					.category-btn__wrapper(style="background-image: url('./img/tabs/05.png')" data-bs-toggle='tab' data-bs-target='#sushi-nigiri-nav' role='tab' aria-controls='nav-sushi-nigiri' aria-selected='false')
+						button#sushiNigiri.nav-link.btn.category-btn Нигири
+
+		.category-body
+			#sushiTabContent.tab-content
+				#sushi-sets-nav.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='sushiSets')
+					.container-fluid
+						.row
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+				#sushi-hot-nav.tab-pane.fade(role='tabpanel' aria-labelledby='sushiHot')
+					.container-fluid
+						.row
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+				#sushi-maki-nav.tab-pane.fade(role='tabpanel' aria-labelledby='sushiMaki')
+					.container-fluid
+						.row
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+				#sushi-gukan-nav.tab-pane.fade(role='tabpanel' aria-labelledby='sushiGukan')
+					.container-fluid
+						.row
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+				#sushi-nigiri-nav.tab-pane.fade(role='tabpanel' aria-labelledby='sushiNigiri')
+					.container-fluid
+						.row
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+							// Category product card column
+							.col-xl-2.col-lg-3.col-md-4.col-sm-6.col-6.p-0
+								// Product card
+								include ./partials/product-card
+								// Product card end
+							// Category product card column end
+
+	//- Stocks slider section
+	include ./partials/stocks

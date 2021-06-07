@@ -1,0 +1,111 @@
+// Product card modal
+#productModal.product-modal.modal.fade(tabindex='-1' aria-labelledby='#productModalLabel' aria-hidden='true')
+	.modal-dialog.modal-dialog-centered.modal-dialog-scrollable
+		.modal-content
+			.modal-body.p-0
+				.container-fluid
+					.row
+						.col-md-8
+							.product-modal__thumb
+								img(src="./img/product-modal/01.png", alt="")
+							.product-modal__description
+								h4.text-black.text-strong.text-lg.mb-3 Ямато
+								p Тёплый ролл, обжаренный в темпурном кляре, со снежным крабом, свежим огурцом, икрой Масаго, сыром Филадельфия и твёрдым сыром
+								.product-modal__extra-info.d-flex
+									.product-modal__weight.me-4
+										span.text-strong.text-sm 120
+										span.ms-1.text-xs г.
+									.product-modal__quant.me-4
+										span.text-strong.text-sm 8
+										span.ms-1.text-xs шт.
+							.product-modal__consist.product-consist.d-flex.flex-wrap
+								.product-consist__item.text-center
+									img(src="./img/product-modal/consist/01.png", alt="Лосось")
+									h5.text-xs.text-black.text-uppercase Лосось
+								.product-consist__item.text-center
+									img(src="./img/product-modal/consist/02.png", alt="Снежный краб")
+									h5.text-xs.text-black.text-uppercase Снежный краб
+								.product-consist__item.text-center
+									img(src="./img/product-modal/consist/03.png", alt="Авокадо")
+									h5.text-xs.text-black.text-uppercase Авокадо
+								.product-consist__item.text-center
+									img(src="./img/product-modal/consist/04.png", alt="Сыр филадельфия")
+									h5.text-xs.text-black.text-uppercase Сыр филадельфия
+								.product-consist__item.text-center
+									img(src="./img/product-modal/consist/05.png", alt="Огурец")
+									h5.text-xs.text-black.text-uppercase Огурец
+								.product-consist__item.text-center
+									img(src="./img/product-modal/consist/06.png", alt="Кунжут")
+									h5.text-xs.text-black.text-uppercase Кунжут
+								.product-consist__item.text-center
+									img(src="./img/product-modal/consist/07.png", alt="Соус-унаги")
+									h5.text-xs.text-black.text-uppercase Соус-унаги
+								.product-consist__item.text-center
+									img(src="./img/product-modal/consist/08.png", alt="Унаги")
+									h5.text-xs.text-black.text-uppercase Унаги
+								.product-consist__item.text-center
+									img(src="./img/product-modal/consist/09.png", alt="Рис")
+									h5.text-xs.text-black.text-uppercase Рис
+						.col-md-4.p-0
+							.product-modal__order-info.order-info
+								button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+								.order-info__wrapper
+									.order-info__quant.number-form
+										span.minus
+											i.grf-minus
+										input(type="text" value="1")
+										span.plus
+											i.grf-plus
+									.d-flex.justify-content-between.flex-wrap.align-item-end
+										.order-info__price.text-white.text-strong.text-lg
+											| 888
+											span.text-sm.ms-1 грн.
+										.order-info__weight.text-white.text-strong.text-md.d-flex.align-items-end.mb-1
+											| 8
+											span.text-sm.ms-1 шт.
+									button.order-info__btn.btn.btn-border.btn-white.d-block.w-100.text-uppercase.text-strong Заказать
+								.order-info__recommend
+									.text-uppercase.text-white.text-strong.text-center.mb-3 Рекомендуем к заказу
+									.order-info__recommend-item.recommend-item.bg-white
+										.recommend-item__info.d-flex
+											img(src="./img/pepsi.png", alt="Pepsi 0.33л")
+											div.d-flex.flex-column.justify-content-between.w-100.ms-2.mt-2.mb-2
+												.text-strong.text-sm Pepsi
+												.d-flex.justify-content-between
+													.text-sm
+														| 88
+														span.ms-1 грн
+													.text-sm
+														| 33
+														span.ms-1 грн
+
+										button.btn-border.btn-green.btn.d-block.w-100 Добавить
+									.order-info__recommend-item.recommend-item.bg-white
+										.recommend-item__info.d-flex
+											img(src="./img/sandora.png", alt="Sandora 1л")
+											div.d-flex.flex-column.justify-content-between.w-100.ms-2.mt-2.mb-2
+												.text-strong.text-sm Sandora Апельсин
+												.d-flex.justify-content-between
+													.text-sm
+														| 88
+														span.ms-1 грн
+													.text-sm
+														| 33
+														span.ms-1 грн
+
+										button.btn-border.btn-green.btn.d-block.w-100 Добавить
+									.order-info__recommend-item.recommend-item.bg-white
+										.recommend-item__info.d-flex
+											img(src="./img/pepsi.png", alt="Pepsi 0.33л")
+											div.d-flex.flex-column.justify-content-between.w-100.ms-2.mt-2.mb-2
+												.text-strong.text-sm Сидр Sommersby
+												.d-flex.justify-content-between
+													.text-sm
+														| 88
+														span.ms-1 грн
+													.text-sm
+														| 33
+														span.ms-1 грн
+
+										button.btn-border.btn-green.btn.d-block.w-100 Добавить
+// Product card modal end

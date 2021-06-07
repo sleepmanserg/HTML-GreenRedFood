@@ -1,0 +1,115 @@
+.product-modal {
+	.modal-dialog {
+		@media (min-width: 576px) {
+			max-width: 840px;
+		}
+	}
+	&__thumb {
+		width: 100%;
+		position: relative;
+		display: block;
+		&::before {
+			content: "";
+			display: block;
+			padding-top: 33%;
+			padding-bottom: 33%;
+		}
+		img {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			max-width: 570px;
+			max-height: 360px;
+		}
+	}
+	&__description {
+		margin-bottom: 35px;
+	}
+	&__description {
+		padding-left: calc(40px - calc(var(--bs-gutter-x) / 2));
+		padding-right: calc(30px - calc(var(--bs-gutter-x) / 2));
+	}
+	&__consist {
+		margin-left: -10px;
+		margin-right: -10px;
+		padding-left: calc(15px - calc(var(--bs-gutter-x) / 2));
+		padding-right: calc(30px - calc(var(--bs-gutter-x) / 2));
+	}
+	.product-consist {
+		&__item {
+			margin-bottom: 29px;
+			flex: 0 0 25%;
+			padding: 0 10px;
+			img {
+				max-width: 80px;
+				max-height: 60px;
+				height: 60px;
+				margin-bottom: 10px;
+				object-fit: contain;
+			}
+			.text-black {
+				color: #000000;
+				font-weight: bolder;
+				letter-spacing: 0.05em;
+				margin-bottom: 0;
+			}
+		}
+	}
+	.modal-content {
+		border-radius: 0;
+		border: none;
+	}
+}
+
+.order-info {
+	background-color: $green-accent;
+	height: 100%;
+	position: relative;
+	margin-left: - calc(var(--bs-gutter-x) / 2);
+	margin-right: - calc(var(--bs-gutter-x) / 2);
+	padding-top: 90px;
+	.btn-close {
+		position: absolute;
+		right: 30px;
+		top: 30px;
+		background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19.3332 2.54666L17.4532 0.666664L9.99984 8.12L2.5465 0.666664L0.666504 2.54666L8.11984 10L0.666504 17.4533L2.5465 19.3333L9.99984 11.88L17.4532 19.3333L19.3332 17.4533L11.8798 10L19.3332 2.54666Z' fill='white'/%3E%3C/svg%3E%0A");
+		opacity: 1;
+		background-size: 100%;
+		box-shadow: none !important;
+		outline: none !important;
+		width: .6em;
+		height: .6em;
+	}
+	&__wrapper {
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-bottom: 40px;
+	}
+	&__recommend {
+		padding: 0 22px;
+	}
+	&__quant {
+		margin-bottom: 35px;
+	}
+	&__btn {
+		margin-top: 35px;
+	}
+}
+
+.recommend-item {
+	border-radius: 25px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	padding: 10px 18px 13px;
+	img {
+		width: 65px;
+		height: 65px;
+		object-fit: contain;
+	}
+	&__info {
+		padding: 10px 0;
+		padding-left: 5px;
+		margin-left: -18px;
+	}
+}

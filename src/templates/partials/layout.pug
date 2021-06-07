@@ -8,7 +8,9 @@ include ../helpers/mixins
 
 doctype html
 html(lang="en")
-
+  block link
+    //- -var selected = 'home'; //default
+    //- -var menu = { 'home': '/home', 'blog': '/blog', 'contact': '/contact' };
   //- head.pug template
   include head
 
@@ -23,6 +25,8 @@ html(lang="en")
       block content
 
     include footer
+
+    include modals
 
     // JavaScript (jQuery) libraries, plugins and custom scripts
     script()&attributes(isNestedFile ? {'src': '../js/vendor.min.js'} : {'src': 'js/vendor.min.js'})
