@@ -17,14 +17,14 @@
 	}
 	&-thumb {
 		width: 100%;
-		padding: 30px 20px 40px;
+		padding: 40px 20px 53px;
 		position: relative;
 		display: block;
 		&::before {
 			content: "";
 			display: block;
-			padding-top: 33%;
-			padding-bottom: 33%;
+			padding-top: 36%;
+			padding-bottom: 36%;
 		}
 		img {
 			position: absolute;
@@ -40,10 +40,11 @@
 	}
 	&-footer {
 		padding: 0 30px;
-	}
-	&-footer {
 		flex-wrap: wrap;
 		padding-bottom: 16px;
+		.btn {
+			z-index: 10;
+		}
 	}
 	&-title {
 		padding-bottom: 9px;
@@ -177,11 +178,25 @@
 			.product__card-order__btn {
 				margin-left: -6px;
 				margin-right: -6px;
+				text-align: center;
+				.btn {
+					height: 50px;
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					max-width: 190px;
+					width: 100%;
+				}
 			}
 		}
 		&.active {
 			.product__card-title {
 				z-index: 8;
+			}
+		}
+		&-footer {
+			.product__card-order__btn {
+				display: none;
 			}
 		}
 	}

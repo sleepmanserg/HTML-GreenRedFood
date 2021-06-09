@@ -1,0 +1,44 @@
+.error-page {
+	padding-top: 53px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	position: relative;
+	.container {
+		max-width: 1170px;
+		display: flex;
+		flex-direction: column;
+	}
+	.container,
+	.row,
+	.col-12 {
+		flex-grow: 1;
+	}
+	&__header {
+		margin-bottom: 37px;
+	}
+	&__message {
+		font-size: 32px;
+		line-height: 36px;
+	}
+	&__404 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		h1 {
+			@media (min-height: 1200px) and (min-width: 1440px) {
+				font-size: 560px;
+			}
+			@media (max-width: $tablet-land) {
+				font-size: 10rem;
+			}
+			font-size: 20rem;
+			line-height: .2;
+			margin-bottom: 0;
+			font-weight: 900;
+			color: $turquoise;
+			opacity: .75;
+		}
+	}
+}

@@ -5,8 +5,8 @@ append config
 
 	//- ********** Settings **********
 	//- ==============================
-	-var pageTitle = 'Суши'
-	-var whatPage = 'Суши'
+	- var pageTitle = 'Суши'
+	- var whatPage = 'Суши'
 	- var PageName = "Суши"
 	- var PageID = 'category';
 	//- ==============================
@@ -17,6 +17,7 @@ block content
 
 	section.category
 		header.category-header.bg-black
+			// Category nav
 			nav.category-nav
 				#sushiTab.nav.category-tab__nav(role='tablist')
 					.category-btn__wrapper.active(style="background-image: url('./img/tabs/01.png')" data-bs-toggle='tab' data-bs-target='#sushi-sets-nav' role='tab' aria-controls='nav-sushi-sets' aria-selected='true')
@@ -29,9 +30,12 @@ block content
 						button#sushiGukan.nav-link.btn.category-btn Гуканы
 					.category-btn__wrapper(style="background-image: url('./img/tabs/05.png')" data-bs-toggle='tab' data-bs-target='#sushi-nigiri-nav' role='tab' aria-controls='nav-sushi-nigiri' aria-selected='false')
 						button#sushiNigiri.nav-link.btn.category-btn Нигири
-
+			// Category nav end
+		// Category inner grid
 		.category-body
+			// Category tabs
 			#sushiTabContent.tab-content
+				// Category tab
 				#sushi-sets-nav.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='sushiSets')
 					.container-fluid
 						.row
@@ -143,6 +147,8 @@ block content
 								include ./partials/product-card
 								// Product card end
 							// Category product card column end
+				// Category tab end
+				// Category tab
 				#sushi-hot-nav.tab-pane.fade(role='tabpanel' aria-labelledby='sushiHot')
 					.container-fluid
 						.row
@@ -254,6 +260,8 @@ block content
 								include ./partials/product-card
 								// Product card end
 							// Category product card column end
+				// Category tab end
+				// Category tab
 				#sushi-maki-nav.tab-pane.fade(role='tabpanel' aria-labelledby='sushiMaki')
 					.container-fluid
 						.row
@@ -365,6 +373,7 @@ block content
 								include ./partials/product-card
 								// Product card end
 							// Category product card column end
+				// Category tab end
 				#sushi-gukan-nav.tab-pane.fade(role='tabpanel' aria-labelledby='sushiGukan')
 					.container-fluid
 						.row
@@ -476,6 +485,7 @@ block content
 								include ./partials/product-card
 								// Product card end
 							// Category product card column end
+				// Category tab
 				#sushi-nigiri-nav.tab-pane.fade(role='tabpanel' aria-labelledby='sushiNigiri')
 					.container-fluid
 						.row
@@ -587,6 +597,8 @@ block content
 								include ./partials/product-card
 								// Product card end
 							// Category product card column end
-
+				// Category tab end
+			// Category tabs end
+		// Category inner grid end
 	//- Stocks slider section
 	include ./partials/stocks

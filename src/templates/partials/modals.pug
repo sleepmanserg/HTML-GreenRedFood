@@ -1,5 +1,5 @@
 // Product card modal
-#productModal.product-modal.modal.fade(tabindex='-1' aria-labelledby='#productModalLabel' aria-hidden='true')
+#productModal.product-modal.greenRedFood-modal.modal.fade(tabindex='-1' aria-labelledby='#productModalLabel' aria-hidden='true')
 	.modal-dialog.modal-dialog-centered.modal-dialog-scrollable
 		.modal-content
 			.modal-body.p-0
@@ -76,10 +76,10 @@
 														| 88
 														span.ms-1 грн
 													.text-sm
-														| 33
-														span.ms-1 грн
+														| 0.33
+														span.ms-1 л
 
-										button.btn-border.btn-green.btn.d-block.w-100 Добавить
+										button.btn-border.btn-green.btn.d-block.addToCartBtn.w-100(data-text-original="Заказать" data-text-swap="Добавлено") Добавить
 									.order-info__recommend-item.recommend-item.bg-white
 										.recommend-item__info.d-flex
 											img(src="./img/sandora.png", alt="Sandora 1л")
@@ -90,10 +90,10 @@
 														| 88
 														span.ms-1 грн
 													.text-sm
-														| 33
-														span.ms-1 грн
+														| 1
+														span.ms-1 л
 
-										button.btn-border.btn-green.btn.d-block.w-100 Добавить
+										button.btn-border.btn-green.btn.d-block.addToCartBtn.w-100(data-text-original="Заказать" data-text-swap="Добавлено") Добавить
 									.order-info__recommend-item.recommend-item.bg-white
 										.recommend-item__info.d-flex
 											img(src="./img/pepsi.png", alt="Pepsi 0.33л")
@@ -104,8 +104,80 @@
 														| 88
 														span.ms-1 грн
 													.text-sm
-														| 33
-														span.ms-1 грн
+														| 0.5
+														span.ms-1 л
 
-										button.btn-border.btn-green.btn.d-block.w-100 Добавить
+										button.btn-border.btn-green.btn.d-block.addToCartBtn.w-100(data-text-original="Заказать" data-text-swap="Добавлено") Добавить
 // Product card modal end
+
+// Login modal
+#loginModal.authorization-modal.greenRedFood-modal.modal.fade(tabindex='-1' aria-labelledby='loginModalLabel' aria-hidden='true')
+	.modal-dialog
+		.modal-content
+			.modal-header
+				h5#loginModalLabel.modal-title.text-center.text-strong.text-uppercase.m-0 Войти
+				button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+					i.grf-close
+			.modal-body
+				form#loginForm.authorization-form.authorization-modal__form.needs-validation(novalidate)
+					.form-inner.d-flex.jusify-content-between
+						.form-input-wrapper
+							label.form-label(for='loginEmail') email
+							input#loginEmail.form-control.form-input(type='email' required)
+							.invalid-feedback Пожалуйста введите email
+						.form-input-wrapper
+							label.form-label(for='loginPassword') пароль
+							input#loginPassword.form-control.form-input(type='password' required)
+							.invalid-feedback Пожалуйста введите пароль
+					.authorization-form-btns.d-flex.justify-content-between
+						button.btn.btn-border.btn-black-border.text-strong.text-uppercase(type='submit') Войти
+						button.btn.btn-border.btn-black-border.text-strong.text-uppercase(type='button' data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss='modal' aria-label='Close') Зарегистрироваться
+			.modal-footer.flex-column
+				h5.modal-title.text-center.text-strong.text-uppercase.m-0 Войти через соц. сети
+				.modal-socials.d-flex.justify-content-center
+					a(href="#").btn.btn-grey.btn-icon
+						i.grf-facebook
+					a(href="#").btn.btn-grey.btn-icon
+						i.grf-google
+// Login modal  end
+
+// Registration modal
+#registerModal.authorization-modal.greenRedFood-modal.modal.fade(tabindex='-1' aria-labelledby='registerModalLabel' aria-hidden='true')
+	.modal-dialog
+		.modal-content
+			.modal-header
+				h5#registerModalLabel.modal-title.text-center.text-strong.text-uppercase.m-0 Зарегистрироваться
+				button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+					i.grf-close
+			.modal-body
+				form#registerForm.authorization-form.authorization-modal__form.needs-validation(novalidate)
+					.form-inner.d-flex.jusify-content-between
+						.form-input-wrapper
+							label.form-label(for='registerName') Имя
+							input#registerName.form-control.auth-form-input(type='text' required)
+							.invalid-feedback Пожалуйста введите имя
+						.form-input-wrapper
+							label.form-label(for='loginEmail') email
+							input#registerEmail.form-control.auth-form-input(type='email' required)
+							.invalid-feedback Пожалуйста введите email
+					.authorization-form-btns.d-flex.justify-content-between
+						button.btn.btn-border.btn-black-border.text-strong.text-uppercase(type='button' data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss='modal' aria-label='Close') Войти
+						button.btn.btn-border.btn-black-border.text-strong.text-uppercase(type='submit') Зарегистрироваться
+			.modal-footer.flex-column
+				h5.modal-title.text-center.text-strong.text-uppercase.m-0 Регистрация через соц. сети
+				.modal-socials.d-flex.justify-content-center
+					a(href="#").btn.btn-grey.btn-icon
+						i.grf-facebook
+					a(href="#").btn.btn-grey.btn-icon
+						i.grf-google
+// Registration modal end
+
+// Order completed modal
+#orderCompleteModal.greenRedFood-modal.order-complete-modal.modal.fade(tabindex='-1' aria-hidden='true')
+	.modal-dialog
+		.modal-content
+			h5#orderCompleteModalLabel.modal-title.text-center.text-strong.text-uppercase.text-lg Ваш заказ принят
+			a(href="index.html" type='button').btn.btn-border.btn-black-border.btn-black.text-strong.text-uppercase.active На главную
+
+
+// Order completed modal end

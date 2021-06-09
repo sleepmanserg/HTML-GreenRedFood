@@ -1,0 +1,87 @@
+extends partials/layout
+
+//- Override default config variables
+append config
+
+	//- ********** Settings **********
+	//- ==============================
+	- var PageName = "Корзина"
+	- var PageID = 'cart';
+	//- ==============================
+	//- ********* Settings END *******
+
+//- Page Content
+block content
+	section.cart
+		header.cart-header.bg-black
+			h1.text-strong.text-lg.text-uppercase.text-white.text-center Ваша корзина
+		form#cart-form.needs-validation(action="" novalidate)
+			.cart-body
+				.container.cart-container
+					.cart-item.d-flex.align-items-center
+						.cart-item__thumb
+							img(src="./img/slider/01.png", alt="")
+						.cart-item__body.d-flex
+							.cart-item__info
+								.cart-item__name.text-strong.text-md Филадельфия классик
+								.cart-item__descr.text-sm Нежный ролл с сыром Филадельфия и свежим лососем
+								.cart-item__weight.text-strong.text-sm
+									| 8888
+									span.ms-1 г
+							.cart-item__meta
+								.cart-qty
+									.order-info__quant.number-form
+										span.minus
+											i.grf-minus
+										input(type="text" value="1")
+										span.plus
+											i.grf-plus
+								.cart-price.text-strong.text-white.text-lg.text-center
+									| 888
+									span.ms-1.text-md грн.
+							.cart-item__remove
+								button.btn.btn-border.btn-black-border
+									i.grf-close
+					.cart-item.d-flex.align-items-center
+						.cart-item__thumb
+							img(src="./img/slider/01.png", alt="")
+						.cart-item__body.d-flex
+							.cart-item__info
+								.cart-item__name.text-strong.text-md Филадельфия классик
+								.cart-item__descr.text-sm Нежный ролл с сыром Филадельфия и свежим лососем
+								.cart-item__weight.text-strong.text-sm
+									| 888
+									span.ms-1 г
+							.cart-item__meta
+								.cart-qty
+									.order-info__quant.number-form
+										span.minus
+											i.grf-minus
+										input(type="text" value="1")
+										span.plus
+											i.grf-plus
+								.cart-price.text-strong.text-white.text-lg.text-center
+									| 888
+									span.ms-1.text-md грн.
+							.cart-item__remove
+								button.btn.btn-border.btn-black-border
+									i.grf-close
+
+			.container.cart__form-container
+				include ./partials/cart-form
+			.cart-footer
+				.d-flex.justify-content-between.align-items-center
+					.cart-footer-price.d-flex.align-items-center
+						span.text-strong.text-white.text-lg Сумма заказа:
+						.cart-full-price.text-lg.text-white.text-strong
+							| 8888
+							span.text-white.text-strong грн.
+					.cart-submit
+						button(type="submit" data-bs-toggle="modal" data-bs-target="#orderCompleteModal").btn.btn-white.btn-icon.text-strong.text-uppercase Оформить заказ
+			//- Stocks slider section
+			include ./partials/stocks
+
+
+
+
+

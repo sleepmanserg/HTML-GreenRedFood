@@ -2,7 +2,7 @@
 .top-bar.topbar
 	.container-fluid
 		.topbar-wrapper
-			.topbar-left
+			.topbar-left.search-hide
 				.btn.btn-white.btn-tobar__phone.btn-has-dropdown
 					.topbar__phone
 						a(href="#") (067) 888-88-88
@@ -14,19 +14,19 @@
 					i.grf-google
 				a(href="#").btn.btn-white.btn-icon
 					i.grf-instagram
-			.topbar-logo
+			.topbar-logo.search-hide
 				a(href="index.html")
 					img(src="./img/logo.png", alt="")
 			.topbar-right
-				a(href="#").btn.btn-white.btn-icon
-					i.grf-search
+				include search
 				.btn.btn-white.btn-icon.btn-has-dropdown.btn-login
 					i.grf-login
 					.btn-dropdown
-						a(href="#") Войти
-						a(href="#") Зарегистрироваться
+						a(data-bs-toggle="modal" data-bs-target="#loginModal") Войти
+						a(data-bs-toggle="modal" data-bs-target="#registerModal") Зарегистрироваться
+						a(href="account-logged.html") Профиль
 
-				a(href="#").btn.btn-white.btn-topbar__cart.btn-has-dropdown
+				a(href="cart.html").btn.btn-white.btn-topbar__cart.btn-has-dropdown
 					.topbar__cart
 						span 3
 						span Корзина
